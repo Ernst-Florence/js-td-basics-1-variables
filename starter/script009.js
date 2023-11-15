@@ -2,16 +2,45 @@
  * 009 - Mutation de variable et conversion de type
  */
 
-// 1. Initialisez les variables firstName à "John" et age à 28.
+// 1. Initialiser les variables firstName à John et age à 28
+const firstName = 'john';
+let age = 28;
 
 // Conversion de type
 
-// 2. Affichez la phrase "John a 28 ans" en utilisant les variables et affichez le type de cette expression.
+// 2. Ecrire l'instruction qui affiche "John a 28 ans"
+// et afficher le type de cette expression
 
-// 3. Déclarez les variables job et isMarried, puis affectez la valeur "professeur" à job et false à isMarried. Ensuite, affichez la phrase "John est un professeur de 28 ans. Est-il marié ? false".
+console.log(`${firstName}`)
+
+
+// 3. Déclarer en une seule instruction les varaibles job et isMarried
+// puis affecter la valeur professeur à job et false à isMarried
+// enfin, écrire l'instruction qui affiche
+// "John est un professeur de 28 ans. Est-il marié ? false"
+
+let job, isMarried;
+job = "professeur";
+isMarried = false;
+
+age = "vingt-huit";
+job = "conducteur";
+const sentence = `${firstName} est un professeur de ${age} ans. Est-il marié ? ${isMarried}`;
+
+console.log(sentence);
 
 // Variable mutation
 
-// 4. Affectez la valeur "vingt-huit" à la variable age et la valeur "conducteur" à la variable job. Ensuite, affichez la phrase précédente dans une boîte de dialogue.
+// 4. Affecter la valeur 'vingt-huit' à la variable age
+// et la valeur 'conducteur' à la variable job.
+// Afficher ensuite la phrase précédente dans une boîet de dialogue
 
-// 5. Affichez une boîte de dialogue demandant "Quel est son nom de famille ?" pour permettre à l'utilisateur d'entrer le nom de famille de John. Stockez ce nom dans une variable lastName, puis affichez "Le nom de famille de John est … (le nom
+
+//alert(sentence)
+const recu = prompt("Entrer votre nom"); //apelle de fonction
+console.log(recu)
+
+// 5. Afficher une boîte de dialogue 'Quel est son nom de famille ?'
+// qui permet à l'utilisateur d'entrer le nom de famille de John
+// et stocker ce nom dans une variable lastName
+// puis afficher "Le nom de famille de John est … (le nom entré)"
